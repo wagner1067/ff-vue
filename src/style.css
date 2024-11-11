@@ -1,0 +1,78 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o body */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  line-height: 1.6; /* Espaçamento de linha */
+  color: #333; /* Cor do texto */
+  background-color: #f8f9fa; /* Cor de fundo suave */
+}
+
+/* Estilos de seções */
+.section {
+  margin-bottom: 40px; /* Espaçamento entre seções */
+  padding: 0 15px; /* Espaçamento lateral para seções */
+}
+
+/* Estilos para títulos */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px; /* Espaçamento inferior para títulos */
+  color: #007bff; /* Cor dos títulos */
+}
+
+/* Estilos para imagens de banner */
+.banner-image {
+  width: 100%; /* Largura total do container */
+  height: auto; /* Manter a proporção da imagem */
+}
+
+/* Estilos de cards de produtos */
+.product-card {
+  background-color: #fff; /* Fundo branco para os cards */
+  border: 1px solid #e0e0e0; /* Borda cinza clara */
+  border-radius: 5px; /* Cantos arredondados */
+  padding: 15px; /* Espaçamento interno */
+  transition: transform 0.3s; /* Efeito de transição */
+  margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Efeito de hover nos cards de produtos */
+.product-card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Estilo de botões */
+.button {
+  background-color: #007bff; /* Cor do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Cantos arredondados */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Cursor de pointer */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+/* Efeito de hover nos botões */
+.button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Ajustes para títulos em dispositivos móveis */
+  h2 {
+    font-size: 1.5em; /* Tamanho do título reduzido */
+  }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+    flex: 1 1 calc(50% - 20px); /* Dois cards por linha */
+  }
+}
